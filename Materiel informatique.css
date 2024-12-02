@@ -1,0 +1,168 @@
+/* CSS principal pour materiel informatique:
+
+/* Réinitialisation des marges, du padding et du modèle de boîte pour tous les éléments */
+* {
+    box-sizing: border-box; /* Le box-sizing définit que les bordures et le padding sont inclus dans la largeur/hauteur de l'élément */
+    margin: 0; /* Supprime les marges par défaut de tous les éléments */
+    padding: 0; /* Supprime les espacements internes par défaut de tous les éléments */
+}
+
+/* Style global pour le corps de la page */
+body {
+    font-family: Arial, sans-serif; /* Police utilisée pour tout le texte */
+    background-color: #f0f0f5; /* Couleur de fond claire pour la page */
+    color: #333; /* Couleur sombre du texte pour un bon contraste */
+    line-height: 1.6; /* Hauteur de ligne pour améliorer la lisibilité du texte */
+}
+
+/* Section de l'en-tête */
+.en-tete {
+    display: flex; /* Utilisation de Flexbox pour organiser les éléments horizontalement */
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne suivante si nécessaire */
+    align-items: center; /* Aligne verticalement les éléments au centre */
+    justify-content: space-between; /* Crée de l'espace égal entre les éléments */
+    padding: 20px; /* Espacement interne autour des éléments dans l'en-tête */
+    background-color: #2a9d8f; /* Couleur de fond de l'en-tête */
+    color: white; /* Couleur du texte dans l'en-tête */
+}
+
+/* Style du conteneur du logo et du titre */
+.logo-title {
+    display: flex; /* Alignement horizontal des éléments du logo et du titre */
+    align-items: center; /* Alignement vertical des éléments au centre */
+}
+
+/* Style spécifique pour l'image du logo */
+.logo {
+    width: 100px; /* Taille du logo */
+    margin-right: 20px; /* Espacement à droite du logo */
+}
+
+/* Style du titre du site */
+.site-title {
+    font-size: 1.5rem; /* Taille du texte du titre */
+}
+
+/* Section de la navigation principale */
+.main-nav {
+    display: flex; /* Utilisation de Flexbox pour la disposition horizontale des liens de navigation */
+    flex-wrap: wrap; /* Permet aux éléments de se répartir sur plusieurs lignes si nécessaire */
+    gap: 10px; /* Espacement entre les éléments de la navigation */
+    justify-content: center; /* Centrer les éléments de la navigation */
+}
+
+/* Style des liens dans la navigation */
+.main-nav a {
+    color: white; /* Couleur du texte des liens */
+    text-decoration: none; /* Retire le soulignement des liens par défaut */
+    font-weight: bold; /* Met les liens en gras pour les rendre plus visibles */
+    padding: 5px 10px; /* Espacement interne autour des liens */
+    border-radius: 5px; /* Coins arrondis des liens */
+    transition: background 0.3s; /* Animation lors du changement de couleur de fond */
+}
+
+/* Effet de survol pour les liens de navigation */
+.main-nav a:hover {
+    background-color: rgba(0, 0, 0, 0.2); /* Change la couleur de fond au survol */
+}
+
+/* Section principale de contenu */
+.centre-page {
+    display: flex; /* Utilisation de Flexbox pour organiser les éléments de contenu */
+    flex-wrap: wrap; /* Permet aux éléments de se répartir sur plusieurs lignes si nécessaire */
+    gap: 20px; /* Espacement entre les éléments de contenu */
+    justify-content: center; /* Centre les éléments dans la section */
+    padding: 20px; /* Espacement interne dans la section */
+}
+
+
+/* Style des images dans le contenu */
+.contenue {
+    display: flex; /* Définit un modèle de mise en page flex */
+    gap: 10%; /* Ajoute un espacement de 10% entre les images */
+    padding-top: 50px; /* Ajoute un espacement de 50px au-dessus de tous les éléments dans le conteneur */
+    justify-content: center; /* Centre les images */
+}
+
+.contenue img {
+    width: 100%; /* L'image prend toute la largeur disponible */
+    max-width: 300px; /* Limite la largeur à 250px */
+    height: auto; /* Hauteur automatique pour conserver les proportions */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère autour de l'image */
+    transition: transform 0.3s ease; /* Transition pour l'effet de zoom */
+}
+
+/* Effet de zoom au survol de l'image */
+.contenue img:hover {
+    transform: scale(1.05); /* Applique un léger zoom sur l'image lors du survol */
+}
+
+/* Section du pied de page */
+.footer {
+    text-align: center; /* Centre le texte dans le pied de page */
+    padding: 15px; /* Espacement interne du pied de page */
+    background-color: #2a9d8f; /* Couleur de fond du pied de page */
+    color: white; /* Couleur du texte du pied de page */
+}
+
+/* Style des liens dans le pied de page */
+.footer a {
+    color: #e9c46a; /* Couleur jaune pour les liens du pied de page */
+    text-decoration: none; /* Retire la décoration par défaut des liens (souligné) */
+}
+
+/* Effet de survol pour les liens du pied de page */
+.footer a:hover {
+    text-decoration: underline; /* Souligne les liens au survol */
+}
+figure {
+    text-align: center; /* Centre l'image et le titre */
+}
+
+figcaption {
+    font-size: 1.2rem; /* Taille du texte du titre */
+    color: #333; /* Couleur du texte pour le titre */
+    margin-top: 10px; /* Espace entre l'image et la légende */
+    font-weight: bold; /* Met le titre en gras */
+}
+
+img {
+    width: 300px; /* Ajuste la taille de l'image si nécessaire */
+    height: auto; /* Garde les proportions de l'image */
+}
+
+/* Media Query pour les écrans ayant une largeur maximale de 768px (tablettes et petits écrans) */
+@media (max-width: 768px) {
+    .logo {
+        width: 80px; /* Réduit la taille du logo sur les écrans plus petits */
+    }
+
+    .site-title {
+        font-size: 1.2rem; /* Réduit la taille du titre du site */
+    }
+
+    .main-nav {
+        flex-direction: column; /* Change la disposition des éléments de navigation en colonne */
+        align-items: center; /* Centre les éléments de navigation en colonne */
+    }
+
+    .main-nav a {
+        padding: 10px 20px; /* Augmente l'espacement interne des liens de navigation pour une meilleure lisibilité */
+    }
+}
+
+/* Media Query pour les écrans ayant une largeur maximale de 480px (smartphones) */
+@media (max-width: 480px) {
+    .logo {
+        width: 60px; /* Réduit encore la taille du logo pour les petits écrans */
+    }
+
+    .site-title {
+        font-size: 1rem; /* Réduit la taille du titre pour les très petits écrans */
+    }
+
+    .contenue img {
+        max-width: 200px; /* Limite encore plus la taille des images sur les petits écrans */
+    }
+}

@@ -1,0 +1,111 @@
+/* Style Faq css */
+body {
+    font-family: Arial, sans-serif; /* Utilise la police Arial pour tout le texte */
+    background-color: #f7f7f7; /* Couleur de fond claire pour la page */
+    margin: 0; /* Supprime les marges par défaut autour du body */
+    padding: 20px; /* Ajoute un espacement interne autour de la page */
+}
+
+/* Conteneur principal des FAQ */
+.faq-container {
+    max-width: 800px; /* Limite la largeur du conteneur à 800px pour une mise en page plus propre */
+    margin: 0 auto; /* Centre le conteneur horizontalement */
+    background-color: #fff; /* Couleur de fond blanche pour le conteneur des FAQ */
+    padding: 20px; /* Ajoute un espacement interne de 20px autour du contenu */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ajoute une légère ombre portée pour donner un effet de profondeur */
+    border-radius: 8px; /* Arrondit les coins du conteneur */
+    box-sizing: border-box; /* Inclut les bordures et le padding dans les dimensions de l'élément */
+}
+
+/* Style du titre principal de la page */
+h1 {
+    text-align: center; /* Centre le titre horizontalement */
+    color: #333; /* Couleur sombre pour le texte du titre */
+    margin-bottom: 20px; /* Ajoute un espacement en bas du titre */
+}
+
+/* Style des sous-titres */
+h2 {
+    color: #007BFF; /* Couleur bleue pour les sous-titres */
+    font-size: 18px; /* Taille de police plus petite que pour le titre principal */
+    margin-top: 20px; /* Ajoute un espacement au-dessus des sous-titres */
+}
+
+/* Style du texte des paragraphes et des listes */
+p, ul {
+    font-size: 16px; /* Taille de police pour les paragraphes et les listes */
+    color: #555; /* Couleur du texte gris clair pour une bonne lisibilité */
+    line-height: 1.6; /* Hauteur de ligne pour améliorer la lisibilité */
+}
+
+/* Style spécifique pour les listes */
+ul {
+    padding-left: 20px; /* Ajoute un espacement à gauche pour les éléments de la liste */
+}
+
+/* Style des éléments de liste */
+li {
+    margin-bottom: 10px; /* Ajoute un espacement en bas de chaque élément de liste */
+}
+
+/* Style des items de FAQ (chaque question et réponse) */
+.faq-item {
+    border-bottom: 1px solid #eee; /* Ajoute une ligne de séparation subtile entre les FAQ */
+    padding-bottom: 15px; /* Ajoute un espacement en bas de chaque item de FAQ */
+    margin-bottom: 15px; /* Ajoute un espacement en bas de chaque item de FAQ */
+}
+
+/* Supprime la ligne de séparation sous le dernier élément de FAQ */
+.faq-item:last-child {
+    border-bottom: none; /* Enlève la bordure sous le dernier élément */
+}
+
+/* Responsive Design - Pour les écrans avec une largeur maximale de 768px (tablettes et petits écrans) */
+@media (max-width: 768px) {
+    body {
+        padding: 10px; /* Réduit l'espacement interne de la page sur les petits écrans */
+    }
+
+    .faq-container {
+        padding: 15px; /* Réduit l'espacement interne du conteneur des FAQ */
+    }
+
+    h1 {
+        font-size: 24px; /* Réduit la taille du titre principal */
+    }
+
+    h2 {
+        font-size: 16px; /* Réduit la taille des sous-titres */
+    }
+
+    p, ul {
+        font-size: 14px; /* Réduit la taille de la police pour le texte et les listes */
+    }
+}
+
+/* Responsive Design - Pour les écrans avec une largeur maximale de 480px (smartphones) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px; /* Réduit davantage la taille du titre principal sur les très petits écrans */
+    }
+
+    h2 {
+        font-size: 14px; /* Réduit encore la taille des sous-titres sur les très petits écrans */
+    }
+
+    p, ul {
+        font-size: 13px; /* Réduit la taille du texte pour les très petits écrans */
+    }
+
+    .faq-container {
+        padding: 10px; /* Réduit l'espacement interne du conteneur des FAQ sur les très petits écrans */
+    }
+
+    ul {
+        padding-left: 15px; /* Réduit l'espacement gauche des listes sur les petits écrans */
+    }
+
+    li {
+        margin-bottom: 8px; /* Réduit l'espacement entre les éléments de liste */
+    }
+}

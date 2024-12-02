@@ -1,0 +1,159 @@
+/* Réinitialisation des marges et du padding pour tous les éléments */
+* {
+    box-sizing: border-box; /* Assure que les dimensions incluent le padding et les bordures */
+    margin: 0; /* Supprime la marge par défaut */
+    padding: 0; /* Supprime le padding par défaut */
+}
+
+/* Style de base pour le body */
+body {
+    font-family: Arial, sans-serif; /* Utilisation de la police Arial ou sans-serif comme police de base */
+    background-color: #f0f0f5; /* Fond gris clair pour toute la page */
+    color: #333; /* Texte en gris foncé pour une bonne lisibilité */
+    line-height: 1.6; /* Définit un interligne pour améliorer la lisibilité */
+    padding: 0 10px; /* Ajoute un petit padding aux bords du body pour éviter que le contenu touche directement les bords */
+}
+
+/* En-tête du site */
+.en-tete {
+    display: flex; /* Utilisation de Flexbox pour une disposition flexible */
+    flex-wrap: wrap; /* Permet aux éléments de s'enrouler si nécessaire */
+    align-items: center; /* Aligne verticalement les éléments au centre */
+    justify-content: space-between; /* Distribue l'espace entre les éléments, en alignant les bords */
+    padding: 20px; /* Ajoute de l'espace interne autour du contenu de l'en-tête */
+    background-color: #2a9d8f; /* Fond vert turquoise pour l'en-tête */
+    color: white; /* Couleur du texte en blanc */
+}
+
+/* Conteneur du logo et du titre du site */
+.logo-title {
+    display: flex; /* Utilisation de Flexbox pour aligner le logo et le titre */
+    align-items: center; /* Aligne le logo et le titre sur un même axe vertical */
+}
+
+/* Style pour le logo */
+.logo {
+    width: 100px; /* Définit la largeur du logo */
+    margin-right: 20px; /* Ajoute un espacement à droite du logo */
+}
+
+/* Style pour le titre du site */
+.site-title {
+    font-size: 1.5rem; /* Taille du texte pour le titre du site */
+    font-weight: bold; /* Met en gras le titre */
+}
+
+/* Navigation principale */
+.main-nav {
+    display: flex; /* Utilisation de Flexbox pour une disposition horizontale des éléments */
+    flex-wrap: wrap; /* Permet aux éléments de se réorganiser sur plusieurs lignes si nécessaire */
+    gap: 15px; /* Ajoute un espacement entre les éléments de navigation */
+    justify-content: center; /* Centre les liens de la navigation */
+    font-size: 1rem; /* Taille de police uniforme pour la navigation */
+}
+
+/* Style des liens de navigation */
+.main-nav a {
+    color: white; /* Texte blanc pour les liens */
+    text-decoration: none; /* Supprime le soulignement par défaut des liens */
+    font-weight: bold; /* Met les liens en gras */
+    padding: 8px 15px; /* Ajoute un peu de padding autour du texte des liens */
+    border-radius: 5px; /* Arrondit les coins des liens */
+    transition: background 0.3s ease, transform 0.3s ease; /* Transition douce pour le changement de fond et un effet de zoom */
+}
+
+/* Effet au survol des liens de navigation */
+.main-nav a:hover {
+    background-color: rgba(0, 0, 0, 0.2); /* Change la couleur de fond au survol pour un effet visuel */
+    transform: scale(1.05); /* Léger zoom sur le lien lors du survol */
+}
+
+/* Section centrale du contenu */
+.centre-page {
+    display: flex; /* Utilisation de Flexbox pour disposer les éléments en ligne */
+    flex-wrap: wrap; /* Permet aux éléments de se réorganiser sur plusieurs lignes si nécessaire */
+    gap: 20px; /* Ajoute un espacement entre les éléments de la section */
+    justify-content: center; /* Centre les éléments de la page */
+    padding: 20px; /* Ajoute de l'espacement autour du contenu */
+}
+
+/* Style des images dans le contenu */
+.contenue {
+    display: flex; /* Définit un modèle de mise en page flex */
+    gap: 10%; /* Ajoute un espacement de 10% entre les images */
+    padding-top: 50px; /* Ajoute un espacement de 50px au-dessus de tous les éléments dans le conteneur */
+    justify-content: center; /* Centre les images */
+}
+
+.contenue img {
+    width: 100%; /* L'image prend toute la largeur disponible */
+    max-width: 300px; /* Limite la largeur à 250px */
+    height: auto; /* Hauteur automatique pour conserver les proportions */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère autour de l'image */
+    transition: transform 0.3s ease; /* Transition pour l'effet de zoom */
+}
+
+/* Effet de zoom au survol de l'image */
+.contenue img:hover {
+    transform: scale(1.05); /* Applique un léger zoom sur l'image lors du survol */
+}
+
+/* Pied de page */
+.footer {
+    text-align: center; /* Centre le texte du pied de page */
+    padding: 15px; /* Ajoute de l'espace autour du contenu */
+    background-color: #2a9d8f; /* Fond vert turquoise pour le pied de page */
+    color: white; /* Texte blanc pour le pied de page */
+}
+
+/* Style des liens dans le pied de page */
+.footer a {
+    color: #e9c46a; /* Couleur dorée pour les liens dans le pied de page */
+    text-decoration: none; /* Supprime le soulignement par défaut des liens */
+}
+
+/* Effet au survol des liens dans le pied de page */
+.footer a:hover {
+    text-decoration: underline; /* Ajoute un soulignement au survol des liens */
+}
+figure {
+    text-align: center; /* Centre l'image et le titre */
+}
+
+figcaption {
+    font-size: 1.2rem; /* Taille du texte du titre */
+    color: #333; /* Couleur du texte pour le titre */
+    margin-top: 10px; /* Espace entre l'image et la légende */
+    font-weight: bold; /* Met le titre en gras */
+}
+
+img {
+    width: 300px; /* Ajuste la taille de l'image si nécessaire */
+    height: auto; /* Garde les proportions de l'image */
+}
+
+/* Responsive Design - Pour les écrans de largeur maximale 768px (tablettes et petits écrans) */
+@media (max-width: 768px) {
+    .logo {
+        width: 80px; /* Réduit la taille du logo sur les écrans plus petits */
+    }
+
+    .site-title {
+        font-size: 1.2rem; /* Réduit la taille du titre pour les écrans plus petits */
+    }
+
+    .main-nav {
+        flex-direction: column; /* Organise les éléments de la navigation en colonne */
+        align-items: center; /* Centre les éléments de la barre de navigation */
+    }
+
+    .main-nav a {
+        padding: 10px 20px; /* Ajoute du padding pour espacer les liens */
+        font-size: 1rem; /* Réduit la taille de police des liens */
+    }
+
+    .contenue {
+        gap: 5%; /* Réduit l'écart entre les images sur les petits écrans */
+    }
+}

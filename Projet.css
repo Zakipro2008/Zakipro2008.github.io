@@ -1,0 +1,208 @@
+/* Global Styles */
+html, body {
+    font-family: 'Poppins', sans-serif; /* Définir la police générale pour la page */
+    margin: 0; /* Enlever les marges par défaut des éléments */
+    padding: 0; /* Enlever le padding par défaut des éléments */
+    background-color: #f4f4f9; /* Définir un fond clair pour toute la page */
+    color: #333; /* Définir une couleur de texte sombre pour le contraste */
+}
+
+/* En-tête */
+.en-tete {
+    display: flex; /* Utilisation du Flexbox pour organiser les éléments */
+    flex-direction: column; /* Organiser les éléments en colonne (verticalement) */
+    align-items: center; /* Centrer les éléments horizontalement */
+    background-color: #2a9d8f; /* Couleur de fond verte pour l'en-tête */
+    color: white; /* Texte en blanc pour contraster avec le fond */
+    padding: 20px 0; /* Ajouter de l'espace autour du contenu */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère sous l'en-tête */
+    max-height: 350px; /* Hauteur maximale de l'en-tête */
+}
+
+.logo-title {
+    display: flex; /* Disposer le logo et le titre sur une même ligne */
+    align-items: center; /* Centrer verticalement les éléments */
+    gap: 15px; /* Espacement entre le logo et le titre */
+}
+
+.logo {
+    width: 70px; /* Définir la largeur du logo */
+    height: auto; /* Maintenir les proportions du logo */
+}
+
+.site-title {
+    font-size: 2em; /* Taille du titre du site */
+    font-weight: bold; /* Rendre le titre plus visible */
+    text-align: center; /* Centrer le titre */
+    letter-spacing: 1px; /* Espacement entre les lettres du titre */
+}
+
+/* Navigation */
+.main-nav {
+    display: flex; /* Utilisation de Flexbox pour la navigation */
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
+    justify-content: center; /* Centrer les liens de navigation horizontalement */
+    gap: 15px; /* Espacement entre les éléments de la navigation */
+    margin-top: 2px; /* Légère marge en haut */
+}
+
+.main-nav a {
+    color: white; /* Couleur blanche pour les liens */
+    text-decoration: none; /* Supprimer le soulignement par défaut des liens */
+    font-size: 1em; /* Taille de police normale pour les liens */
+    font-weight: bold; /* Rendre les liens en gras */
+    padding: 10px 15px; /* Espacement autour du texte des liens */
+    border-radius: 30px; /* Coins arrondis pour les liens */
+    transition: all 0.3s ease-in-out; /* Ajouter une transition pour les effets au survol */
+    background: rgba(0, 0, 0, 0.1); /* Fond léger et semi-transparent */
+    height: 25px; /* Hauteur des liens */
+}
+
+.main-nav a:hover {
+    background-color: #1b1f23; /* Fond sombre au survol */
+    transform: scale(1.1); /* Agrandir légèrement le lien au survol */
+}
+
+/* Lien de contact */
+.connexion-link {
+    background-color: #e76f51; /* Couleur de fond rouge pour le bouton de connexion */
+    color: white; /* Texte blanc */
+    padding: 10px 20px; /* Espacement autour du texte */
+    border-radius: 50px; /* Coins très arrondis pour un effet de pillule */
+    text-align: center; /* Centrer le texte */
+    text-decoration: none; /* Supprimer le soulignement */
+    font-weight: bold; /* Mettre le texte en gras */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre sous le bouton */
+    transition: background 0.3s, transform 0.2s; /* Transition pour les effets */
+}
+
+.connexion-link:hover {
+    background-color: #d1495b; /* Changer la couleur de fond au survol */
+    transform: translateY(-3px); /* Déplacer le bouton légèrement vers le haut */
+}
+
+/* Contenu principal */
+.contenue {
+    width: 90%; /* Largeur du contenu (90% de la largeur de l'écran) */
+    max-width: 1200px; /* Limiter la largeur à 1200px */
+    margin: 30px auto; /* Ajouter une marge autour du contenu */
+    background-color: white; /* Fond blanc pour la section principale */
+    padding: 30px; /* Espacement autour du contenu */
+    border-radius: 15px; /* Coins arrondis pour le contenu */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); /* Ombre autour du contenu */
+    text-align: center; /* Centrer le texte */
+    line-height: 1.6; /* Espacement entre les lignes pour améliorer la lisibilité */
+}
+
+.welcome-message {
+    font-size: 1.2em; /* Taille de police plus grande pour le message de bienvenue */
+    max-width: 700px; /* Limiter la largeur du message */
+    margin: 0 auto; /* Centrer le message */
+    background-color: #e9c46a; /* Fond jaune clair */
+    padding: 20px; /* Espacement autour du texte */
+    border-radius: 10px; /* Coins arrondis pour le message */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Ombre sous le message */
+    color: #264653; /* Texte sombre */
+}
+
+.animated-text {
+    font-weight: bold; /* Texte en gras */
+    animation: fadeIn 2s ease-in-out; /* Animation d'apparition du texte */
+}
+
+/* Pied de page */
+.footer {
+    text-align: center; /* Centrer le texte du pied de page */
+    padding: 20px; /* Espacement autour du texte */
+    background-color: #2a9d8f; /* Fond vert pour le pied de page */
+    color: white; /* Texte en blanc */
+    margin-top: 30px; /* Marge en haut pour séparer le contenu du pied de page */
+    font-size: 0.9em; /* Taille de police légèrement plus petite */
+    letter-spacing: 0.5px; /* Espacement léger entre les lettres */
+}
+
+.footer p {
+    margin: 5px 0; /* Espacement entre les paragraphes du pied de page */
+}
+
+.contact-info {
+    list-style: none; /* Supprimer les puces des éléments de la liste */
+    padding: 0; /* Supprimer le padding par défaut */
+    margin: 10px 0; /* Marge autour de la liste */
+}
+
+.contact-info li {
+    margin: 5px 0; /* Marge autour de chaque élément de la liste */
+}
+
+.contact-info a {
+    color: #e9c46a; /* Couleur jaune pour les liens */
+    text-decoration: none; /* Supprimer le soulignement des liens */
+    font-weight: bold; /* Mettre le texte des liens en gras */
+}
+
+.contact-info a:hover {
+    text-decoration: underline; /* Souligner le lien au survol */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Début de l'animation : invisible */
+    }
+    100% {
+        opacity: 1; /* Fin de l'animation : complètement visible */
+    }
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .logo {
+        width: 60px; /* Réduire la taille du logo sur les écrans plus petits */
+    }
+
+    .site-title {
+        font-size: 1.5em; /* Réduire la taille du titre sur les petits écrans */
+    }
+
+    .main-nav {
+        gap: 10px; /* Réduire l'espacement entre les liens de navigation */
+    }
+
+    .main-nav a {
+        font-size: 0.9em; /* Réduire la taille des liens */
+        padding: 8px 10px; /* Réduire l'espacement autour des liens */
+    }
+
+    .contenue {
+        padding: 20px; /* Réduire l'espacement autour du contenu */
+    }
+
+    .welcome-message {
+        font-size: 1em; /* Réduire la taille du message de bienvenue */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 50px; /* Réduire encore la taille du logo sur les très petits écrans */
+    }
+
+    .site-title {
+        font-size: 1.2em; /* Réduire la taille du titre encore plus */
+    }
+
+    .main-nav a {
+        font-size: 0.8em; /* Réduire la taille des liens encore plus */
+    }
+
+    .connexion-link {
+        font-size: 0.8em; /* Réduire la taille du bouton de connexion */
+        padding: 8px 15px; /* Réduire l'espacement autour du bouton */
+    }
+
+    .welcome-message {
+        padding: 15px; /* Réduire l'espacement autour du message de bienvenue pour les petits écrans */
+        font-size: 0.9em; /* Réduire la taille de la police pour mieux s'adapter aux petits écrans */
+    }
+}

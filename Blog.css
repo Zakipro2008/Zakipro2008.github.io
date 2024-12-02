@@ -1,0 +1,153 @@
+/* Style de blog */
+body {
+    font-family: Arial, sans-serif; /* Utilise la police Arial, sans-serif comme police de base */
+    line-height: 1.6; /* Définit l'interligne pour améliorer la lisibilité du texte */
+    margin: 0; /* Supprime les marges par défaut autour de la page */
+    padding: 0; /* Supprime le padding par défaut autour de la page */
+    background-color: #f4f4f4; /* Définit une couleur de fond gris clair pour la page */
+    color: #333; /* Définit la couleur du texte en gris foncé pour tout le contenu */
+}
+
+/* En-tête de la page */
+header {
+    background: #333; /* Définit un fond noir pour l'en-tête */
+    color: #fff; /* Texte blanc dans l'en-tête */
+    padding: 10px 20px; /* Ajoute un espacement autour du contenu de l'en-tête */
+    text-align: center; /* Centre le texte dans l'en-tête */
+}
+
+/* Style pour le titre principal de l'en-tête */
+header h1 {
+    margin: 0; /* Supprime la marge par défaut autour du titre */
+    font-size: 2em; /* Définit la taille du texte du titre principal */
+}
+
+/* Barre de navigation */
+nav {
+    background: #444; /* Fond gris plus foncé pour la barre de navigation */
+    color: #fff; /* Couleur du texte en blanc */
+    display: flex; /* Utilisation de Flexbox pour une disposition flexible */
+    justify-content: center; /* Centre les éléments dans la barre de navigation */
+    flex-wrap: wrap; /* Permet aux éléments de s'enrouler si nécessaire */
+    padding: 10px 0; /* Ajoute un espacement vertical dans la barre de navigation */
+}
+
+/* Style pour les liens de la navigation */
+nav a {
+    color: #fff; /* Définit la couleur des liens en blanc */
+    text-decoration: none; /* Supprime la décoration de soulignement des liens */
+    margin: 0 15px; /* Ajoute un espacement horizontal entre les liens */
+}
+
+/* Effet au survol des liens dans la navigation */
+nav a:hover {
+    text-decoration: underline; /* Ajoute un soulignement lors du survol */
+}
+
+/* Conteneur principal du contenu */
+.container {
+    width: 90%; /* Définit la largeur du conteneur à 90% de la largeur de l'écran */
+    max-width: 1200px; /* Limite la largeur maximale du conteneur à 1200px */
+    margin: 20px auto; /* Centre le conteneur horizontalement avec un espacement de 20px autour */
+    padding: 20px; /* Ajoute un espacement interne de 20px */
+    background: #fff; /* Définit un fond blanc pour le contenu */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute une légère ombre pour donner un effet de profondeur */
+    border-radius: 8px; /* Arrondit les coins du conteneur pour un look plus doux */
+}
+
+/* Style pour les articles */
+.article {
+    margin-bottom: 20px; /* Ajoute un espacement en bas de chaque article */
+    padding: 10px 0; /* Ajoute un espacement interne en haut et en bas */
+    border-bottom: 1px solid #ddd; /* Ajoute une bordure légère sous chaque article */
+}
+
+/* Supprime la bordure sous le dernier article */
+.article:last-child {
+    border-bottom: none;
+}
+
+/* Style pour les titres des articles */
+.article h2 {
+    color: #333; /* Couleur gris foncé pour le titre des articles */
+}
+
+/* Style pour le texte des articles */
+.article p {
+    color: #555; /* Couleur gris pour le texte des articles */
+}
+
+/* Conteneur pour la zone de commentaire de l'utilisateur (blogger space) */
+.blogger-space {
+    background: #eef; /* Fond bleu clair pour la zone de commentaires */
+    padding: 15px; /* Espacement interne de 15px */
+    margin-top: 20px; /* Ajoute un espacement au-dessus de la zone */
+    border-radius: 8px; /* Arrondit les coins de la zone de commentaire */
+}
+
+/* Style pour le titre dans la zone de commentaire */
+.blogger-space h3 {
+    color: #222; /* Couleur de texte plus foncée pour le titre dans la zone de commentaire */
+}
+
+/* Style pour la zone de saisie du commentaire */
+.blogger-space textarea {
+    width: 100%; /* L'élément textarea occupe toute la largeur disponible */
+    height: 100px; /* Définit la hauteur de la zone de texte */
+    padding: 10px; /* Ajoute un espacement interne */
+    border-radius: 4px; /* Arrondit les coins de la zone de texte */
+    border: 1px solid #ccc; /* Bordure grise autour de la zone de texte */
+    margin-bottom: 10px; /* Ajoute un espacement en bas de la zone de texte */
+}
+
+/* Style pour le bouton de soumission */
+button {
+    background: #333; /* Fond sombre pour le bouton */
+    color: #fff; /* Texte blanc dans le bouton */
+    border: none; /* Supprime la bordure par défaut du bouton */
+    padding: 10px 15px; /* Ajoute un espacement interne pour rendre le bouton plus visible */
+    border-radius: 4px; /* Arrondit les coins du bouton */
+    cursor: pointer; /* Change le curseur en forme de main pour indiquer que c'est cliquable */
+}
+
+/* Effet de survol sur le bouton */
+button:hover {
+    background: #555; /* Change la couleur de fond du bouton lorsqu'il est survolé */
+}
+
+/* Responsive Design - Pour les écrans de largeur maximale 768px (tablettes et petits écrans) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em; /* Réduit la taille du titre principal dans l'en-tête */
+    }
+
+    nav {
+        flex-direction: column; /* Organise les éléments de la navigation en colonne */
+        align-items: center; /* Centre les éléments de la barre de navigation */
+    }
+
+    nav a {
+        margin: 5px 0; /* Réduit l'espacement horizontal entre les liens et les empile verticalement */
+    }
+
+    .container {
+        width: 95%; /* Réduit la largeur du conteneur à 95% pour s'adapter aux écrans plus petits */
+        padding: 15px; /* Réduit le padding interne du conteneur */
+    }
+}
+
+/* Responsive Design - Pour les écrans de largeur maximale 480px (smartphones) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2em; /* Réduit la taille du titre principal pour les petits écrans */
+    }
+
+    button {
+        width: 100%; /* Le bouton occupe toute la largeur disponible sur les petits écrans */
+        padding: 12px; /* Augmente légèrement l'espacement interne pour les petits écrans */
+    }
+
+    .blogger-space textarea {
+        height: 80px; /* Réduit la hauteur de la zone de texte pour les petits écrans */
+    }
+}

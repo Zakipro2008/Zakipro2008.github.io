@@ -1,0 +1,149 @@
+/* CSS principal pour Jeux-vidéos */
+
+/* Réinitialisation des marges, padding et box-sizing pour tous les éléments */
+* {
+    box-sizing: border-box; /* Le box-sizing définit le calcul de la largeur et hauteur d'un élément, ici on inclut la bordure et le padding dans la largeur/hauteur */
+    margin: 0; /* Suppression des marges par défaut */
+    padding: 0; /* Suppression des espacements par défaut */
+}
+
+/* Style global du corps de la page */
+body {
+    font-family: Arial, sans-serif; /* Police utilisée pour le texte */
+    background-color: #f0f0f5; /* Couleur de fond claire pour toute la page */
+    color: #333; /* Couleur de texte sombre pour une bonne lisibilité */
+    line-height: 1.6; /* Hauteur de ligne pour un espacement agréable entre les lignes de texte */
+}
+
+/* En-tête du site */
+.en-tete {
+    display: flex; /* Utilisation de flexbox pour disposer les éléments en ligne */
+    flex-wrap: wrap; /* Permet aux éléments de se placer sur plusieurs lignes si nécessaire */
+    align-items: center; /* Alignement vertical des éléments au centre */
+    justify-content: space-between; /* Espace uniforme entre les éléments */
+    padding: 20px; /* Espacement interne de l'en-tête */
+    background-color: #2a9d8f; /* Couleur de fond de l'en-tête */
+    color: white; /* Couleur du texte en blanc */
+}
+
+/* Style du logo et du titre du site dans l'en-tête */
+.logo-title {
+    display: flex; /* Les éléments logo et titre sont alignés horizontalement */
+    align-items: center; /* Alignement vertical au centre */
+}
+
+/* Style spécifique pour l'image du logo */
+.logo {
+    width: 100px; /* Largeur du logo */
+    margin-right: 20px; /* Espacement entre le logo et le titre */
+}
+
+/* Style du titre du site */
+.site-title {
+    font-size: 1.5rem; /* Taille de la police pour le titre */
+}
+
+/* Style de la navigation principale */
+.main-nav {
+    display: flex; /* Flexbox pour une disposition flexible des éléments */
+    flex-wrap: wrap; /* Permet aux éléments de se placer sur plusieurs lignes si nécessaire */
+    gap: 10px; /* Espacement entre les éléments de la navigation */
+    justify-content: center; /* Centre les éléments de la navigation */
+}
+
+/* Style des liens dans la navigation */
+.main-nav a {
+    color: white; /* Couleur du texte des liens */
+    text-decoration: none; /* Supprime la décoration par défaut des liens (souligné) */
+    font-weight: bold; /* Rend le texte en gras */
+    padding: 5px 10px; /* Espacement interne des liens */
+    border-radius: 5px; /* Coins arrondis des liens */
+    transition: background 0.3s; /* Transition douce lors du changement de couleur de fond */
+}
+
+/* Effet au survol des liens de la navigation */
+.main-nav a:hover {
+    background-color: rgba(0, 0, 0, 0.2); /* Changement de couleur de fond au survol */
+}
+
+/* Section principale de contenu */
+.centre-page {
+    display: flex; /* Flexbox pour une disposition flexible des éléments */
+    flex-wrap: wrap; /* Permet aux éléments de se placer sur plusieurs lignes si nécessaire */
+    gap: 20px; /* Espacement entre les éléments */
+    justify-content: center; /* Centre les éléments de la section */
+    padding: 20px; /* Espacement interne de la section */
+}
+
+/* Style des images dans le contenu */
+.contenue img {
+    width: 100%; /* L'image prend toute la largeur de son conteneur */
+    max-width: 500px; /* Limite la largeur maximale de l'image */
+    height: auto; /* Maintient le ratio de l'image */
+    border-radius: 10px; /* Coins arrondis de l'image */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère autour de l'image */
+    transition: transform 0.3s; /* Transition douce lors de la transformation */
+}
+
+/* Effet au survol des images */
+.contenue img:hover {
+    transform: scale(1.05); /* Agrandissement de l'image au survol */
+}
+
+/* Pied de page */
+.footer {
+    text-align: center; /* Centre le texte dans le pied de page */
+    padding: 15px; /* Espacement interne du pied de page */
+    background-color: #2a9d8f; /* Couleur de fond du pied de page */
+    color: white; /* Couleur du texte en blanc */
+}
+
+/* Style des liens dans le pied de page */
+.footer a {
+    color: #e9c46a; /* Couleur jaune des liens dans le pied de page */
+    text-decoration: none; /* Supprime la décoration par défaut des liens */
+}
+
+/* Effet au survol des liens dans le pied de page */
+.footer a:hover {
+    text-decoration: underline; /* Souligne les liens au survol */
+}
+
+.rook3 > img{
+    width: 400px;
+}
+
+/* Media Query pour les écrans de moins de 768px */
+@media (max-width: 768px) {
+    .logo {
+        width: 80px; /* Réduit la taille du logo pour les petits écrans */
+    }
+
+    .site-title {
+        font-size: 1.2rem; /* Réduit la taille du titre */
+    }
+
+    .main-nav {
+        flex-direction: column; /* Change la disposition des éléments de la navigation en colonne */
+        align-items: center; /* Centre les éléments de la navigation */
+    }
+
+    .main-nav a {
+        padding: 10px 20px; /* Augmente l'espacement interne des liens pour plus de confort */
+    }
+}
+
+/* Media Query pour les écrans de moins de 480px */
+@media (max-width: 480px) {
+    .logo {
+        width: 60px; /* Réduit encore la taille du logo */
+    }
+
+    .site-title {
+        font-size: 1rem; /* Réduit la taille du titre pour les très petits écrans */
+    }
+
+    .contenue img {
+        max-width: 200px; /* Réduit la taille maximale des images */
+    }
+}

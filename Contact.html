@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Déclaration du jeu de caractères utilisé pour l'encodage de la page -->
+    <meta charset="UTF-8">
+    <!-- Permet d'assurer que la page est responsive et s'adapte à différentes tailles d'écran -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Lien vers l'icône du site qui apparaîtra dans l'onglet du navigateur -->
+    <link rel="shortcut icon" href="../Images/Zakpro.png" type="image/x-icon">
+    <!-- Lien vers le fichier CSS qui définit la mise en forme de cette page -->
+    <link rel="stylesheet" href="../Css/email.css">
+    <!-- Titre qui apparaît dans l'onglet du navigateur -->
+    <title>Contact</title>
+</head>
+<body>
+    <!-- Conteneur pour un message de bienvenue ou d'instruction -->
+    <div class="text-container">
+        <p>
+            Bienvenue sur notre page de connexion. Veuillez entrer vos informations pour accéder à votre compte.
+            Si vous avez oublié vos identifiants, contactez notre support.
+        </p>
+    </div>
+
+    <!-- Conteneur pour le formulaire de contact -->
+    <div class="form-container">
+        <!-- Titre principal de la section Contact -->
+        <h1>Contact</h1>
+        <!-- Début du formulaire de contact -->
+        <form>
+            <!-- Section pour entrer le nom de l'utilisateur -->
+            <div class="form-group">
+                <label for="name">Nom :</label>
+                <!-- Champ de saisie pour le nom -->
+                <input id="name" class="input-field" type="text" placeholder="Entrez votre nom">
+            </div>
+
+            <!-- Section pour entrer le prénom de l'utilisateur -->
+            <div class="form-group">
+                <label for="name">Prenom :</label>
+                <!-- Champ de saisie pour le prénom -->
+                <input id="name" class="input-field" type="text" placeholder="Entrez votre prenom">
+            </div>
+
+            <!-- Section pour entrer l'email de l'utilisateur -->
+            <div class="form-group">
+                <label for="Email">Email :</label>
+                <!-- Champ de saisie pour l'email -->
+                <input id="Email" class="input-field" type="email" placeholder="Entrez votre email">
+            </div>
+
+            <!-- Section pour entrer le message -->
+            <div class="form-group">
+                <textarea placeholder="Ecrivez ci joint votre message"></textarea>
+                <!-- Bouton d'envoi du formulaire -->
+                <button>Envoyer</button>
+            </div>
+        </form>
+
+        <!-- Lien permettant de revenir à la page d'accueil -->
+        <a href="../Index.html">
+            <h2>Retour à l'Accueil</h2>
+        </a>
+    </div>
+</body>
+</html>
